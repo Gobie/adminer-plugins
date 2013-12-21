@@ -10,7 +10,7 @@ A central concept of PHPUnit's Database Extension are [DataSets and DataTables](
 - [XML DataSet](#xml-dataset)
  
 
-### Flat XML DataSet {#flat-xml-dataset}
+### Flat XML DataSet
 Exports database to dataset, where each node of `<dataset />` has structure `<table col='value' ... />`.
 ```
 <?xml version="1.0" ?>
@@ -20,7 +20,7 @@ Exports database to dataset, where each node of `<dataset />` has structure `<ta
 </dataset>
 ```
 
-### XML DataSet {#xml-dataset}
+### XML DataSet
 Exports database to dataset, where each node of `<dataset />` has structure `<table><column>columnName</column> ... <row><value>value</value> ... </row></table>`.
 ```
 <?xml version="1.0" ?>
