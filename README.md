@@ -47,4 +47,4 @@ Exports database to dataset, where each node of `<dataset />` has structure `<ta
 ```
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Gobie/adminer-plugins/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/6dd3e8f6e2b1389b1777fa070df8dd1e "githalytics.com")](http://githalytics.com/Gobie/adminer-plugins)
