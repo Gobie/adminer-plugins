@@ -45,3 +45,6 @@ Exports database to dataset, where each node of `<dataset />` has structure `<ta
     </table>
 </dataset>
 ```
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Gobie/adminer-plugins/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
