@@ -37,14 +37,14 @@ class AdminerDumpFlatXmlDataSet {
 			register_shutdown_function(array($this, '_dataset'));
 		}
 		
-		$connection = connection();
+		$connection = Adminer\connection();
 		$result = $connection->query($query);
 		if ($result) {
 			while ($row = $result->fetch_assoc()) {
-				echo "\t<". h($table) ."";
+				echo "\t<". Adminer\h($table) ."";
 				foreach ($row as $key => $val) {
 					echo isset($val)
-						? " " . h($key) . "='" . h($val) . "'"
+						? " " . Adminer\h($key) . "='" . Adminer\h($val) . "'"
 						: "";
 				}
 				echo " />\n";

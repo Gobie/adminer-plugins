@@ -37,16 +37,16 @@ class AdminerDumpXmlDataSet {
 			register_shutdown_function(array($this, '_dataset'));
 		}
 		
-		$connection = connection();
+		$connection = Adminer\connection();
 		$result = $connection->query($query);
 		if ($result) {
-			echo "\t<table name='" . h($table) . "'>\n";
+			echo "\t<table name='" . Adminer\h($table) . "'>\n";
 			
-			$query2 = "SHOW FULL COLUMNS FROM " . table(DB) . "." . table($table);
+			$query2 = "SHOW FULL COLUMNS FROM " . Adminer\table(Adminer\DB) . "." . Adminer\table($table);
 			$result2 = $connection->query($query2);
 			if ($result2) {
 				while ($row2 = $result2->fetch_row()) {
-					echo "\t\t<column>" . h($row2[0]) . "</column>\n";
+					echo "\t\t<column>" . Adminer\h($row2[0]) . "</column>\n";
 				}
 			}
 				
@@ -54,7 +54,7 @@ class AdminerDumpXmlDataSet {
 				echo "\t\t<row>\n";
 				foreach ($row as $val) {
 					echo isset($val)
-						? "\t\t\t<value>" . h($val) . "</value>\n"
+						? "\t\t\t<value>" . Adminer\h($val) . "</value>\n"
 						: "\t\t\t<null />\n";
 				}
 				echo "\t\t</row>\n";
